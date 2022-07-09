@@ -5,7 +5,7 @@
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
 
-  --font-family: "Roboto", sans-serif;
+  --font-family: 'Roboto', sans-serif;
 }
 /* Общие стили */
 body {
@@ -31,8 +31,7 @@ li {
 .address:hover,
 .address:focus,
 .footer-contact:hover,
-.footer-contact:focus
-{
+.footer-contact:focus {
   color: var(--accent-color);
 }
 .btn:hover,
@@ -48,16 +47,16 @@ li {
 
 .logo,
 .logo-studio {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
 }
-.logo{
-    color: #000000;
+.logo {
+  color: #000000;
 }
 .logo-web,
-.current{
+.current {
   color: var(--accent-color);
 }
 
@@ -75,9 +74,8 @@ li {
 .hero {
   background: #2f303a;
 }
-.general-title
-{
- font-weight: 700;  
+.general-title {
+  font-weight: 700;
 }
 .order {
   font-size: 16px;
@@ -110,14 +108,14 @@ li {
   line-height: 1.71;
   color: var(--secondary-text-color);
 }
-  /* Чем мы занимаемся */
+/* Чем мы занимаемся */
 
 .page-title {
   font-size: 36px;
   line-height: 1.17;
-   text-align: center;
-  }
-  /* Наша команда */
+  text-align: center;
+}
+/* Наша команда */
 .our-team {
   background: #f5f4fa;
 }
@@ -150,8 +148,8 @@ li {
 .footer-contact {
   color: rgba(255, 255, 255, 0.6);
 }
-.logo-studio{
-color: var(--main-color);
+.logo-studio {
+  color: var(--main-color);
 }
 
 /* PORTFOLIO.HTML */
@@ -171,13 +169,12 @@ color: var(--main-color);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  
 }
-.portfolio-text{
-font-size: 16px;
-line-height: 1.8;
-color: var(--secondary-text-color);
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--secondary-text-color);
 }
 .portfolio-nav {
-    color: inherit;
+  color: inherit;
 }
