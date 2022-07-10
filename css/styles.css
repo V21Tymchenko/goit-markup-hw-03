@@ -11,6 +11,7 @@
 body {
   background-color: var(--main-color);
   color: var(--main-text-color);
+
   font-family: var(--font-family);
   font-style: normal;
   font-size: 14px;
@@ -24,8 +25,8 @@ li {
 }
 
 /* Активное состояние ссылок и кнопок*/
-.nav:hover,
-.nav:focus,
+.link:hover,
+.link:focus,
 .contact:hover,
 .contact:focus,
 .address:hover,
@@ -40,11 +41,30 @@ li {
 .order:focus {
   color: var(--main-color);
   background-color: var(--accent-color);
+
   border-style: none;
   border-radius: 4px;
 }
 /* Header */
 
+.container{
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+ 
+  margin:0 auto;
+}
+.main-container{
+  align-items: center;
+}
+.main-container,
+.main-nav,
+.main-list{
+  display: flex;
+}
+.main-nav{
+  align-items: center;
+}
 .logo,
 .logo-studio {
   font-family: 'Raleway', sans-serif;
@@ -54,66 +74,144 @@ li {
 }
 .logo {
   color: #000000;
+
+  margin-right: 93px;
+}
+.link{
+  color: var(--main-text-color);
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .logo-web,
 .current {
   color: var(--accent-color);
 }
+.main-list{
+  padding-left:0px;
+  margin-top:0px;
+  margin-bottom: 0px;
+}
+.main-item{
+  display: block;
+}
+.main-item:not(:last-child){
+  margin-right:50px;
+}
+.contact-list{
+  padding-left:0px;
 
-.main-nav,
+  display: flex;
+  margin-left: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.main-list,
 .contact {
+  color: var(--secondary-text-color);
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
 }
-.nav {
-  color: var(--main-text-color);
+.contact:not(:last-child){
+  margin-right: 50px;
 }
 /* Hero */
+.container-hero{
+padding-top: 200px;
+padding-bottom: 200px;
+}
 .hero {
   background: #2f303a;
 }
-.general-title {
-  font-weight: 700;
+.hero,
+.our-team{
+  text-align: center;
 }
+
 .order {
+  color: var(--main-text-color);
+  background-color: #f5f4fa;
+
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
 
   border-style: none;
   border-radius: 4px;
-  background-color: #f5f4fa;
-  color: var(--main-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+
+  min-width: 200px;
+  padding: 10px 30px;
+
+  display: inline-block;  
 }
 .title {
+  color: #ffffff;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+ 
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
+
 /*  Приемущества */
-.list-title {
+.benefits,
+.our-team{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.benefits-list{
+  display: flex;
+
+  margin: 0px;
+  padding-left:0px
+}
+.benefits-item:not(:last-child){
+  margin-right: 30px;
+}
+
+.benefits-title {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+
+  margin: 0px;
 }
-.list-text {
-  line-height: 1.71;
+.benefits-text {
   color: var(--secondary-text-color);
+
+  line-height: 1.71;
+  min-width: 270px;
 }
+
 /* Чем мы занимаемся */
 
+.do{
+  padding-bottom: 94px;
+}
 .page-title {
   font-size: 36px;
   line-height: 1.17;
+
   text-align: center;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+.do-list{
+  display: flex;
+  margin: 0px;
+  padding-left: 0px;
+
+  justify-content: space-between;  
 }
 /* Наша команда */
 .our-team {
@@ -121,12 +219,21 @@ li {
 }
 .team {
   line-height: 1.18;
+
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0px;
 }
 .team-title,
 .team-text {
   font-size: 16px;
 }
+.team-list{
+  background: #FFFFFF;
 
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
 .team-title {
   font-weight: 500;
 }
@@ -136,6 +243,9 @@ li {
 /* Footer */
 .page-footer {
   background: var(--secondary-color);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .address,
 .footer-contact {
@@ -151,7 +261,12 @@ li {
 .logo-studio {
   color: var(--main-color);
 }
-
+.footer-list{
+  padding-left: 0px;
+}
+.footer-item:not(:last-child){
+  margin-bottom: 9px;
+}
 /* PORTFOLIO.HTML */
 .btn {
   cursor: pointer;
