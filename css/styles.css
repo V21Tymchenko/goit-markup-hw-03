@@ -281,6 +281,7 @@ ul{
   font-style: normal;
 }
 .footer-logo{
+  display: inline-block;
   margin-bottom: 20px;
 }
 
