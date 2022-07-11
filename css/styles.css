@@ -113,8 +113,8 @@ ul{
   color: var(--accent-color);
 }
 .link,
-.main-item,
 .team-photo,
+.do-photo,
 .work-photo{
   display: block;
 }
