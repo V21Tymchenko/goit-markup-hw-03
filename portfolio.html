@@ -22,14 +22,24 @@
       <nav class="main-nav">
         <a class="logo" href="./index.html"><span class="logo-web">Web</span>Studio</a>
         <ul class="main-list">
-          <li class="main-item"><a class="link" href="./index.html">Студия</a></li>
-          <li class="main-item"><a class="current link" href="./portfolio.html">Портфолио</a></li>
+          <li class="main-item"><a class="current link" href="./index.html">Студия</a></li>
+          <li class="main-item"><a class="link" href="./portfolio.html">Портфолио</a></li>
           <li class="main-item"><a class="link" href="">Контакты</a></li>
         </ul>
       </nav>
       <ul class="contact-list">
-      <a class="contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
-      <a class="contact" href="tel:+380961111111">+38 096 111 11 11</a>
+        <li class="contact-item" >
+      <a class="contact" href="mailto:info@devstudio.com">
+        <svg class="envelope">
+          <use  href="./image/symbol-defs.svg#envelope"></use>
+        </svg>info@devstudio.com</a>
+      </li>
+      <li class="contact-item">
+      <a class="contact" href="tel:+380961111111">
+        <svg class="phone">
+          <use  href="./image/symbol-defs.svg#phone"></use>
+        </svg>+38 096 111 11 11</a>
+      </li>
     </ul>
     </div>
     </header>
@@ -173,9 +183,10 @@
     </main>
     <!--Footer-->
     <footer class="page-footer">
-      <div class="container">
+      <div class="container footer-container">
+        <div class="container-address">
       <a class="logo-studio footer-logo" href="./index.html"><span class="logo-web">Web</span>Studio</a>
-      <address >
+      <address>
         <ul class="footer-list">
           <li class="footer-item">
             <a
@@ -194,6 +205,40 @@
           </li>
         </ul>
       </address>
+    </div>
+    <div class="container-join">
+      <b class="join">присоединяйтесь</b>
+      <ul class="join-list">
+        <li class="join-item">
+          <a class="join-link" href="">
+            <svg class="join-svg">
+              <use width="20px" height="20px" href="./image/symbol-defs.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="join-item">
+          <a class="join-link" href="">
+            <svg class="join-svg" >
+              <use width="20px" height="20px" href="./image/symbol-defs.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="join-item">
+          <a class="join-link" href="">
+            <svg class="join-svg">
+              <use width="20px" height="20px" href="./image/symbol-defs.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="join-item">
+          <a class="join-link" href="">
+            <svg class="join-svg">
+              <use width="20px" height="20px" href="./image/symbol-defs.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
     </div>
     </footer>
   </body>
